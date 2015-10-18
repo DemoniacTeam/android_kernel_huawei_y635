@@ -117,6 +117,18 @@ dtb-$(CONFIG_ARCH_MSM8916) += \
 	huawei_y635_l11_va.dtb \
 	huawei_y635_l21_va.dtb \
 endif
+ifeq ($(CONFIG_SUPPORT_Y550),y)
+dtb-$(CONFIG_ARCH_MSM8916) += \
+	huawei_y550_l01_va.dtb \
+	huawei_y550_l02_va.dtb \
+	huawei_y550_l03_va.dtb \
+	huawei_y550_l01_vb.dtb \
+	huawei_y550_l02_vb.dtb \
+	huawei_y550_l03_vb.dtb \
+	huawei_y550_l01_vc.dtb \
+	huawei_y550_l02_vc.dtb \
+	huawei_y550_l03_vc.dtb 
+endif
 endif
 else
 dtb-$(CONFIG_ARCH_MSM8916) += msm8916-sim.dtb \
